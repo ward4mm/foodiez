@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Description of this web site">
+	  <meta name="author" content="Your Name Here">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Avocado Toast</title>
+
+		<!-- Bootstrap v5.1.3 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;900&display=swap" rel="stylesheet">
+	</head>
+	<style>
+	.container-fluid {
+		background-color: #D2EF79;
+	}
+	.foodies {
+		color: #D2EF79;
+			font-family: 'Poppins', sans-serif;
+			font-weight:600;
+			font-size:200px;
+			text-align: center;
+		}
+		.title {
+			text-align: center;
+			background-color: #D2EF79;
+		}
+		.intro {
+			background-color: #D2EF79;
+			font-size:60px;
+			font-family: 'Poppins', sans-serif;
+			font-weight:600;
+			height: 90px;
+			text-align:center;
+			color:#000;
+			padding-top: 50px;
+			height: 200px;
+		}
+		.intro p {	
+				border-radius: 50px;
+				padding-left: 25px;
+				padding-right: 25px;
+				border: #000;
+				border-style: solid;
+				display:inline;
+		}
+		.ingredient {
+			text-align:center;
+			font-weight:600;
+			padding-top: 50px;
+		}
+		.spice {
+			text-align:center;
+			padding-top: 50px;
+		}
+		.modal-body {
+			font-size: 15px;
+		}
+		.button {
+			text-align: center;
+			padding-top: 40px;
+		}
+		.btn-primary {
+			border: 1px solid #000;
+			color:#000;
+			background-color: #D2EF79;
+			border-radius: 50px;
+			font-family: 'Poppins', sans-serif;
+			font-weight:600;
+			font-size: 60px;
+			color:#000;
+		}
+		.btn-primary:hover {
+			background-color: #000;
+			color:#fff;
+		}
+		.btn-primary:focus {
+        background-color: #000;
+    	}
+		.btn-primary:active {
+		outline: #fff;
+		}
+		.modal-body {
+			font-family: 'Poppins', sans-serif;
+		}
+		.modal-title {
+			font-family: 'Poppins', sans-serif;
+		}
+		.directions {
+			width: 1200px;
+			height: 750px;
+			background-color:#fff ;
+			border: 1px solid #000;
+			color:#000;
+			padding-top: 25px;
+			padding-left: 40px;
+			padding-right: 40px;
+			margin: 20px;
+			border-radius: 50px;
+			font-size: 25px;
+			margin-left: 100px;
+			font-family: 'Poppins', sans-serif;
+		}
+		.egg {
+			padding-bottom:60px;
+			transform: rotate(-70deg);
+		}
+		img.square {
+			border-radius: 50px;
+			border: #000;
+			border-style: solid;
+		}
+	</style>
+	<body>
+		<nav class="navbar navbar-expand-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+					  <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				  </ul>
+			</div>
+		  </nav><!-- End Navigation -->	
+		  <div class="row">
+			<div class="col-lg-12">
+				<div class="header">
+				<div class="foodies">
+				<p>Foodiez</p>
+				</div>
+				</div>
+			</div>
+		</div><!-- End Row 1 -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="intro">
+						<p>Avocado Toast</p>
+					</div>
+				</div>
+			</div><!-- End Row 2 -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title">
+						<img src="images/toast.png" alt="Pepper" class="square" width="60%"> 
+					</div>
+				</div>
+				</div>
+			</div><!-- End Row 3 -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="button"><!-- Begin Modal-->
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								Ingredients
+							  </button>
+							  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <h5 class="modal-title" id="exampleModalLabel">Ingredients</h5>
+									  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<!-- add in the upload file stuff in here-->
+									<div class="modal-body">
+										<p> ☺ 1/2 of 1 Avocado</p>
+										<p>☺ 1-2 Slices of Bread</p>
+										<p>☺ 1-2 Eggs</p>
+										<p>☺ 1/2 tsp Salt</p> 
+										<p>☺ 1/2 tsp Pepper</p> 
+										<p>☺ 1/2 tsp Garlic</p> 
+										<p>☺ 1 tbsp Everything But The Bagel Seasoning</p>
+										</p>
+									</div>
+									<div class="modal-footer">
+
+									</div>
+								  </div>
+								</div>
+							  </div><!-- End Modal -->
+					</div>
+				</div><!-- End Row 4 -->
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="spice">
+						<img src="images/garlic.png" alt="Garlic" width="55%">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="spice">
+						<img src="images/salt.png" alt="Salt" width="50%">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="spice">
+						<img src="images/pepper.png" alt="Pepper" width="60%">
+					</div>
+				</div>
+			</div><!-- End Row 5 -->
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="spice">
+						<img src="images/sriracha.png" alt="Sriracha" width="30%">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="spice">
+						<img src="images/ebtb.png" alt="EBTB" width="40%">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="ingredient">
+						<img src="images/avocado.png" alt="Avocado" width="55%">
+					</div>
+				</div>
+			</div><!-- End Row 5 -->
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="ingredient">
+						<img src="images/bread.png" alt="Bread" width="80%">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="egg">
+						<img src="images/egg.png" alt="Egg" width="75%">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="ingredient">
+						<img src="images/tomato.png" alt="Tomatoes" width="75%">
+					</div>
+				</div>
+			</div><!-- End Row 6 -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="directions">
+						<span style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:60px;"><p>Directions</p></span>
+						<p>Begin by getting all of your ingredients out.</p>
+						<p>Place your small to medium sized pan on the stove and turn the burner on low to medium heat. Start with low and if it's taking too long, turn it up. I usually cook my eggs somewhere in between low and medium heat. Put your eggs in the pan and every 30 seconds use a pushing motion with the spatula. If your eggs start to pile up, grab the handle of the pan and lightly shake it forawrd and back. repeat these steps until the eggs are done to your liking and set aside.</p>
+						<p>Next, put your bread in the toaster. While your bread is toasting, cut your avocado in half, spoon out the avocado and begin smashing with a fork. Add in your garlic, salt, and pepper to the avocado. Then, begin slicing your tomatoes. You can simply slice them in half, or cut them into two or more slices. Once all of your ingredients are ready, spread the avocado on the toast. Then, sprinkle on your Everything but the Bagel Seasoning and add your tomatoes on top. Once your tomatoes are added, place your eggs on the bread. To finish, top with Sriracha and some more Everything but the Bagel Seasoning. And viola, you did it! </p>
+					</div>
+				</div>
+			</div><!-- End Row 4 -->
+		</div>
+		<div class="col-lg-12">
+			<div class="footer">
+			</div>
+		</div>
+	</div><!-- End Row-->
+	</body>
+</html>
